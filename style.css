@@ -1,0 +1,444 @@
+
+
+/* .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: auto;
+} */
+.navbar-collapse{
+    justify-content: space-between;
+}
+
+.navbar-list{
+    display: flex;
+    list-style-type: none;
+    margin: 1rem;
+    gap: 10px;
+
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.navbar-link:hover{
+    color: pink;
+
+}
+.mobile-navbar-btn{
+display: none;
+background: transparent;
+cursor: pointer;
+}
+.mobile-nav-icon{
+    height: 2rem;
+    width: 2rem;
+}
+
+li a{
+    color: black;
+    padding: 5px 5px;
+}
+
+.hero{
+    height: 300px;
+    width: auto;
+    background-color: aqua;
+}
+
+.services{
+    height: 300px;
+    width: auto;
+    /* background-color: burlywood; */
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+}
+.countdown div span{
+    height: 100px;
+    width: 100px;
+    background-color: #00B0F0;
+    margin: 0px 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.countdown div span p{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    line-height: 100px;
+}
+.countdown div p{
+    text-align: center;
+    color: #738287;
+    font-size: 12px;
+}
+button{
+    padding: 10px 5 px;
+    background-color: white;
+    color: #00B0F0;
+    z-index: 999;
+    border-radius: 5px;
+}
+.game{
+    background-color: #60b347;
+    color: white;
+    font-family: 'press start 2p';
+}
+.gameCriteria{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+.NumberGuesstitle{
+    text-align: center;
+}
+.show{
+    display: flex;
+    align-items: center;
+
+    
+    color: black;
+}
+.line{
+    width: 35%;
+    height: 5px;
+    background-color: white;
+}
+.middle{
+    display: flex;
+    width: 30%;
+    height: 80px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+}
+.numberCheck{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+}
+.typeNumber{
+    height: 80px;
+    width: 130px;
+    border: 2px solid white;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    background: transparent;
+}
+.btnCheck, .buton{
+    color: black;
+    padding: 5px 10px;
+    border-color: transparent;
+}
+.numberArea{
+    display: block;
+}
+.showModal{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #738287;
+    color: white;
+    border: none;
+}
+.mod{
+    padding: 20px;
+}
+button:focus{
+    outline: none;
+}
+.moda{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 30%;
+    z-index: 10;
+    background-color: aqua;
+    transform: translate(-50%, -50%);
+}
+body{
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: gray;
+}
+.hidden{
+    display: none;
+}
+.icn{
+    color: red;
+}
+.nc{
+    color: blue;
+}
+.ngame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 3rem;
+}
+.ngame div img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.ngame div img:hover{
+    /* height: 90px;
+    width: 90px; */
+    opacity: 0.5;
+    cursor: pointer;
+}
+#user, #comp{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.msg_container{
+    text-align: center;
+}
+#msg{
+    background-color: #60b347;
+    border-radius: 5px;
+    font-size: 30px;
+    /* padding: 5px; */
+    text-align: center;
+    margin: 5px;
+}
+
+.score_board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+#curconvert h3,form{
+    text-align: center;
+}
+/* #curconvert h3,form,select,input{
+    border: none;
+    outline: none;
+} */
+#curconvert {
+    padding: 20px;
+    background-color: #f4e4ba;
+    border: none;
+    text-align: center;
+}
+#convert{
+    background-color: #f4c7ba;
+    color: black;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2); 
+    padding: 7px;
+}
+
+#convert:hover{
+    background-color: #d47d63;
+    transition: all 0.5s;
+    color: white;
+}
+
+#mdis{
+display: inline-block;
+background-color: #bacaf4;
+padding: 25px 10px;
+border-radius: 5px;
+
+}
+
+
+.amount input{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    padding: 5px;
+}
+.amount input:focus {
+    border-color: #d47d63;
+  }
+
+  .amount p{
+    text-align: left;
+    margin-bottom: 0rem;
+  }
+
+  .drop-down{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .drop-down p{
+    margin-bottom: 0rem;
+    text-align: left;
+  }
+  .select-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .select-container select:focus{
+    outline: none;
+    border: none;
+  }
+  .select-container img,select{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  .select-container img{
+    height: 56px;
+    object-fit: cover;
+    border-radius: 22px;
+  }
+
+  .two_Arrow img{
+   height: 30px;
+   width: 30px;
+   margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:62em) {
+    .header{
+        position: relative;
+    }
+    .mobile-navbar-btn{
+        display: block;
+        background: transparent;
+        cursor: pointer;
+        z-index: 999;
+        }
+
+     .navbar{
+        /* display: none; */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: beige;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        visibility: hidden;
+        opacity: 0 ;
+        pointer-events: none;
+     }
+     .navbar-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+     
+     body{
+        overflow-x: hidden;
+     }
+     html{
+        overflow-x: hidden;
+     }
+
+     .active .navbar{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+     }
+
+     .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"]{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px;
+        transition: all 0.5s linear;
+        transform: translateX(0%);
+     }
+     .active .mobile-navbar-btn .mobile-nav-icon[name="list-outline"]{
+        display: none;
+     }
+}
